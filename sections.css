@@ -393,8 +393,41 @@ body.menu-open {
 }
 
 @media (max-width: 768px) {
+  .steps-section {
+    padding: 40px 20px;
+  }
   .steps-main-title {
     font-size: 48px;
+    margin: 0 0 32px 0;
+  }
+  .steps-image-container {
+    height: 250px;
+    margin-bottom: 16px;
+  }
+  .steps-card {
+    padding: 24px;
+    gap: 32px;
+  }
+  .steps-card-title {
+    font-size: 20px;
+  }
+  .step-item {
+    gap: 16px;
+  }
+  .step-icon-wrapper {
+    width: 48px;
+    height: 48px;
+  }
+  .step-icon {
+    width: 18px;
+    height: 18px;
+  }
+  .step-title {
+    font-size: 15px;
+  }
+  .step-description {
+    font-size: 13px;
+    line-height: 1.4;
   }
 }
 
@@ -645,8 +678,31 @@ body.menu-open {
     font-size: 24px;
     text-align: center;
   }
+  .accordion {
+    max-width: 100%;
+  }
   .accordion-item {
-    padding: 20px 0;
+    border-bottom: 1px solid var(--color-border-light);
+  }
+  .accordion-button {
+    padding: 24px 0;
+    font-size: 15px;
+    line-height: 1.4;
+  }
+  .accordion-button::after {
+    background-size: 24px 24px;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+  .accordion-body {
+    padding: 0 0 24px 0;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .accordion-question {
+    font-size: 15px;
+    line-height: 1.4;
   }
 }
 

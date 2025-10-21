@@ -30,43 +30,70 @@
       <header class="site-header">
         <div class="container-fluid">
           <div class="row align-items-center">
-            <div class="col-md-6">
+            <div class="col-sm-6">
               <div class="d-flex align-items-center">
-                <a href="/" class="me-4">
+                <a href="/">
                   <img
                     src="images/6773eea9d0a2565be8d2291929e6e2e683ed383d.png"
                     alt="Mening Vandaag Logo"
                     class="logo"
                   />
                 </a>
-                <nav class="main-nav d-none d-lg-flex">
-                  <a href="#rewards" class="me-4">Rewards</a>
+                <nav class="main-nav desktop-nav">
+                  <a href="#rewards">Rewards</a>
                   <a href="#">Surveys</a>
                 </nav>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="d-flex justify-content-end gap-3">
-                <a href="#" class="btn btn-secondary">
-                  <img
-                    src="images/I77_365_1_2046.svg"
-                    alt=""
-                    class="btn-icon"
-                  />
-                  <span>Sign in</span>
-                </a>
-                <a href="#" class="btn btn-primary">
-                  <img
-                    src="images/I77_365_1_2049.svg"
-                    alt=""
-                    class="btn-icon"
-                  />
-                  <span>Sign Up</span>
-                </a>
+            <div class="col-sm-6">
+              <div class="d-flex justify-content-end gap-3 align-items-center">
+                <div class="desktop-buttons">
+                  <a href="#" class="btn btn-secondary">
+                    <img
+                      src="images/I77_365_1_2046.svg"
+                      alt=""
+                      class="btn-icon"
+                    />
+                    <span>Sign in</span>
+                  </a>
+                  <a href="#" class="btn btn-primary">
+                    <img
+                      src="images/I77_365_1_2049.svg"
+                      alt=""
+                      class="btn-icon"
+                    />
+                    <span>Sign Up</span>
+                  </a>
+                </div>
+                <button
+                  class="hamburger-menu"
+                  id="hamburgerMenu"
+                  aria-label="Toggle menu"
+                >
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
               </div>
             </div>
           </div>
         </div>
+        <nav class="mobile-menu" id="mobileMenu">
+          <div class="mobile-menu-content">
+            <a href="#rewards" class="mobile-menu-link">Rewards</a>
+            <a href="#" class="mobile-menu-link">Surveys</a>
+            <div class="mobile-menu-buttons">
+              <a href="#" class="btn btn-secondary">
+                <img src="images/I77_365_1_2046.svg" alt="" class="btn-icon" />
+                <span>Sign in</span>
+              </a>
+              <a href="#" class="btn btn-primary">
+                <img src="images/I77_365_1_2049.svg" alt="" class="btn-icon" />
+                <span>Sign Up</span>
+              </a>
+            </div>
+          </div>
+        </nav>
       </header>
       <div class="container">
         <div class="row justify-content-center text-center">
@@ -183,7 +210,7 @@
             <!--merged image-->
             <div class="value-image-collage">
               <div class="image-collage-bg">
-                <div class="card-column">
+                <!-- <div class="card-column">
                   <img
                     src="images/70160d3652fc1c417cc8f126cc4ff907723501f3.png"
                     alt="Visa Card"
@@ -226,7 +253,7 @@
                     alt="Uber Card"
                     class="card-uber"
                   />
-                </div>
+                </div> -->
               </div>
             </div>
           </div>

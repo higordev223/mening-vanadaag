@@ -49,7 +49,6 @@
 .logo {
   width: 154px;
   height: 53px;
-  margin-right: 48px;
 }
 
 .main-nav {
@@ -1816,12 +1815,12 @@ body.menu-open {
   }
 }
 
-/* CSS for section section:activation-code-sent */
-.activation-code-sent-section .form-header {
+/* CSS for section section:activation-code */
+.activation-code-section .form-header {
   margin-top: 32px;
 }
 
-.activation-code-sent-section .form-header h1 {
+.activation-code-section .form-header h1 {
   font-family: "Archivo", sans-serif;
   font-weight: 700;
   font-size: 32px;
@@ -1830,27 +1829,27 @@ body.menu-open {
   margin: 0 0 4px 0;
 }
 
-.activation-code-sent-section .form-image {
+.activation-code-section .form-image {
   width: 100%;
   height: 100%;
   max-width: 310px;
   margin: 0 auto;
 }
 
-.activation-code-sent-section .form-image img {
+.activation-code-section .form-image img {
   width: 100%;
 }
 
 /* Mobile responsive font size for activation code sent h1 */
 @media (max-width: 768px) {
-  .activation-code-sent-section .form-header h1 {
+  .activation-code-section .form-header h1 {
     font-size: 28px;
     line-height: 32px;
   }
 }
 
 @media (max-width: 480px) {
-  .activation-code-sent-section .form-header h1 {
+  .activation-code-section .form-header h1 {
     font-size: 24px;
     line-height: 28px;
   }

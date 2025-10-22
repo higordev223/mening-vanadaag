@@ -965,7 +965,8 @@ body.menu-open {
 }
 
 /* CSS for section section:login */
-.login-section {
+.login-section,
+.two-column-section {
   width: 100%;
   max-width: 1200px;
   display: flex;
@@ -974,7 +975,8 @@ body.menu-open {
   justify-content: center;
 }
 
-.login-form-container {
+.login-form-container,
+.two-column-left-container {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -1083,7 +1085,8 @@ body.menu-open {
   text-decoration: underline;
 }
 
-.illustration-container {
+.illustration-container,
+.two-column-right-container {
   flex: 1;
   max-width: 654px;
   background-color: #f4f4f5;
@@ -1099,7 +1102,8 @@ body.menu-open {
   height: 738px;
 }
 
-.illustration-container .logo {
+.illustration-container .logo,
+.two-column-right-container .logo {
   width: 201px;
   height: auto;
 }
@@ -1116,18 +1120,26 @@ body.menu-open {
   position: absolute;
 }
 
+.illustration-group img {
+  width: 100%;
+}
+
 @media (max-width: 1100px) {
-  .login-section {
+  .login-section,
+  .two-column-section {
     flex-direction: column;
     gap: 40px;
   }
   .login-form-container,
-  .illustration-container {
+  .illustration-container,
+  .two-column-left-container,
+  .two-column-right-container {
     flex: none;
     width: 100%;
     max-width: 500px;
   }
-  .illustration-container {
+  .illustration-container,
+  .two-column-right-container {
     height: auto;
     padding: 32px;
   }
@@ -1140,10 +1152,12 @@ body.menu-open {
     min-height: calc(100vh - 93px - 99px);
     padding: 30px 20px;
   }
-  .illustration-container {
+  .illustration-container,
+  .two-column-right-container {
     display: none;
   }
-  .login-form-container {
+  .login-form-container,
+  .two-column-left-container {
     max-width: 100%;
   }
 }
@@ -1621,12 +1635,14 @@ body.menu-open {
 /* Mobile responsive spacing for form rows */
 @media (max-width: 768px) {
   /* Remove padding from main signup section row */
-  #signup .login-section.row {
+  #signup .login-section.row,
+  #signup .two-column-section.row {
     margin-left: 0;
     margin-right: 0;
   }
 
-  #signup .login-section > .col-12 {
+  #signup .login-section > .col-12,
+  #signup .two-column-section > .col-12 {
     padding-left: 0;
     padding-right: 0;
   }
@@ -1705,13 +1721,15 @@ body.menu-open {
     margin-top: 16px;
   }
 
-  .illustration-container {
+  .illustration-container,
+  .two-column-right-container {
     padding: 24px;
     height: auto;
     min-height: 400px;
   }
 
-  .illustration-container .logo {
+  .illustration-container .logo,
+  .two-column-right-container .logo {
     width: 150px;
   }
 
@@ -1732,12 +1750,14 @@ body.menu-open {
   }
 
   /* Ensure row has no margins */
-  #signup .login-section.row {
+  #signup .login-section.row,
+  #signup .two-column-section.row {
     margin-left: 0;
     margin-right: 0;
   }
 
-  #signup .login-section > .col-12 {
+  #signup .login-section > .col-12,
+  #signup .two-column-section > .col-12 {
     padding-left: 0;
     padding-right: 0;
   }
@@ -1793,5 +1813,45 @@ body.menu-open {
 
   .form-fields {
     gap: 14px;
+  }
+}
+
+/* CSS for section section:activation-code-sent */
+.activation-code-sent-section .form-header {
+  margin-top: 32px;
+}
+
+.activation-code-sent-section .form-header h1 {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 35px;
+  color: #000000;
+  margin: 0 0 4px 0;
+}
+
+.activation-code-sent-section .form-image {
+  width: 100%;
+  height: 100%;
+  max-width: 310px;
+  margin: 0 auto;
+}
+
+.activation-code-sent-section .form-image img {
+  width: 100%;
+}
+
+/* Mobile responsive font size for activation code sent h1 */
+@media (max-width: 768px) {
+  .activation-code-sent-section .form-header h1 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .activation-code-sent-section .form-header h1 {
+    font-size: 24px;
+    line-height: 28px;
   }
 }

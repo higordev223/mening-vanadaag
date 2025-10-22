@@ -187,7 +187,8 @@ body.menu-open {
   transition: all 0.3s ease;
 }
 .btn-primary:hover {
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: #c40000;
+  border-color: #c40000;
   transform: translateY(-1px);
 }
 
@@ -1852,6 +1853,14 @@ body.menu-open {
 
 .mb-32 {
   margin-bottom: 32px !important;
+}
+
+/* Activation form button hover styles */
+.activation-code-section .btn-primary:hover,
+.activation-account-section .btn-primary:hover {
+  background-color: #c40000;
+  border-color: #c40000;
+  transform: translateY(-1px);
 }
 
 @media (max-width: 480px) {

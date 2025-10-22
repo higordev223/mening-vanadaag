@@ -1869,3 +1869,14 @@ body.menu-open {
     line-height: 28px;
   }
 }
+
+/* CSS for section section:activation-success */
+.activation-success .form-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 42px;
+}
+.activation-success .form-header p {
+  max-width: 300px;
+  margin: 0 auto;
+}

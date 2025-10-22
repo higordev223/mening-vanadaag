@@ -1,6 +1,7 @@
 :root {
   --color-white: #ffffff;
   --color-black: #000000;
+  --color-black-text: #27272a;
   --color-primary-yellow: #fcb72b;
   --color-secondary-yellow: #ffc75f;
   --color-primary-red: #dd0000;
@@ -9,10 +10,13 @@
   --color-text-light: #fafafa;
   --color-text-muted: #d4d4d8;
   --color-border-light: #f4f4f5;
+  --color-text-grey-light: #e5e7eb;
+  --color-text-grey: #71717a;
+  --color-border: #d9d9d9;
 
-  --font-archivo: 'Archivo', sans-serif;
-  --font-inter: 'Inter', sans-serif;
-  --font-sora: 'Sora', sans-serif;
+  --font-archivo: "Archivo", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --font-sora: "Sora", sans-serif;
 }
 
 body {

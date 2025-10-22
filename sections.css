@@ -49,6 +49,7 @@
 .logo {
   width: 154px;
   height: 53px;
+  margin-right: 48px;
 }
 
 .main-nav {
@@ -1105,6 +1106,7 @@ body.menu-open {
 .two-column-right-container .logo {
   width: 201px;
   height: auto;
+  margin-right: 0;
 }
 
 .illustration-group {

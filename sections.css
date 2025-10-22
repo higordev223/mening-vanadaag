@@ -985,7 +985,7 @@ body.menu-open {
 
 .form-header {
   text-align: center;
-  margin-bottom: 42px;
+  margin-bottom: 32px;
 }
 
 .form-header h1 {
@@ -1001,7 +1001,7 @@ body.menu-open {
   font-family: "Archivo", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 15px;
+  line-height: 24px;
   color: #52525b;
   margin: 0;
 }
@@ -1846,6 +1846,10 @@ body.menu-open {
     font-size: 28px;
     line-height: 32px;
   }
+}
+
+.mb-32 {
+  margin-bottom: 32px !important;
 }
 
 @media (max-width: 480px) {

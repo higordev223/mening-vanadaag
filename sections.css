@@ -1332,6 +1332,12 @@ body.menu-open {
     min-height: calc(100vh - 93px - 99px);
     padding: 30px 20px;
   }
+
+  /* Remove extra padding from container in signup section */
+  #signup .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1401,4 +1407,391 @@ body.menu-open {
 
 .login-form .mb-3:last-of-type {
   margin-bottom: 0 !important;
+}
+
+/* Bootstrap 5 compatible styles for signup form */
+.signup-form .form-label {
+  font-size: 14px;
+  color: var(--color-black-text);
+  line-height: 19.6px;
+  margin-bottom: 8px;
+}
+
+.signup-form .form-control {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 12px 16px;
+  width: 100%;
+  height: 40px;
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  color: #000;
+  box-shadow: none;
+}
+
+.signup-form .form-control:focus {
+  border-color: var(--color-border);
+  box-shadow: 0 0 0 0.2rem rgba(221, 0, 0, 0.25);
+}
+
+.signup-form .form-control::placeholder {
+  color: var(--color-text-grey);
+}
+
+.signup-form .btn-primary {
+  background-color: var(--color-primary-red);
+  border-color: var(--color-primary-red);
+  color: var(--color-white);
+  border: none;
+  border-radius: 400px;
+  padding: 14px 16px;
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: center;
+  line-height: 20px;
+  transition: all 0.3s ease;
+  margin-top: 16px;
+  margin-bottom: 4px;
+}
+
+.signup-form .btn-primary:hover {
+  background-color: #c40000;
+  border-color: #c40000;
+  transform: translateY(-1px);
+}
+
+.signup-form .btn-primary:focus {
+  background-color: var(--color-primary-red);
+  border-color: var(--color-primary-red);
+  box-shadow: 0 0 0 0.2rem rgba(221, 0, 0, 0.25);
+}
+
+/* Bootstrap grid adjustments for signup form */
+.signup-form .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.signup-form .col-md-6 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.signup-form .g-3 > * {
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.signup-form .g-3 > *:first-child {
+  padding-left: 0;
+}
+
+.signup-form .g-3 > *:last-child {
+  padding-right: 0;
+}
+
+.signup-form .g-3 {
+  --bs-gutter-x: 16px;
+  --bs-gutter-y: 0;
+}
+
+/* Bootstrap form-select styling */
+.signup-form .form-select {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 100%;
+  height: 40px;
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  color: #000;
+  box-shadow: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m1 6 7 7 7-7'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px 12px;
+  padding-right: 40px;
+}
+
+.signup-form .form-select:focus {
+  border-color: var(--color-border);
+  box-shadow: 0 0 0 0.2rem rgba(221, 0, 0, 0.25);
+}
+
+.signup-form .form-select option {
+  color: #000;
+  background-color: var(--color-white);
+}
+
+/* Date input styling */
+.signup-form input[type="date"] {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 12px 16px;
+  width: 100%;
+  height: 40px;
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  color: #000;
+  box-shadow: none;
+  position: relative;
+}
+
+.signup-form input[type="date"]:focus {
+  border-color: var(--color-border);
+  box-shadow: 0 0 0 0.2rem rgba(221, 0, 0, 0.25);
+}
+
+/* Custom styling for date input to match design */
+.signup-form input[type="date"]::-webkit-calendar-picker-indicator {
+  background-image: url("images/116_657.svg");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  opacity: 1;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.signup-form input[type="date"]::-webkit-datetime-edit-text {
+  color: var(--color-text-grey);
+}
+
+.signup-form input[type="date"]::-webkit-datetime-edit-month-field,
+.signup-form input[type="date"]::-webkit-datetime-edit-day-field,
+.signup-form input[type="date"]::-webkit-datetime-edit-year-field {
+  color: #000;
+}
+
+/* Bootstrap checkbox styling */
+.signup-form .form-check-input {
+  width: 18px;
+  height: 18px;
+  margin-top: 0;
+  margin-right: 12px;
+  border: 1px solid #a1a1aa;
+  border-radius: 2px;
+  background-color: var(--color-white);
+  cursor: pointer;
+}
+
+.signup-form .form-check-input:checked {
+  background-color: var(--color-primary-red);
+  border-color: var(--color-primary-red);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
+}
+
+.signup-form .form-check-input:focus {
+  border-color: var(--color-primary-red);
+  box-shadow: 0 0 0 0.2rem rgba(221, 0, 0, 0.25);
+}
+
+.signup-form .form-check-label {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-black-text);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.signup-form .form-check {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+.signup-form .form-check:last-child {
+  margin-bottom: 0;
+}
+
+/* Mobile responsive spacing for form rows */
+@media (max-width: 768px) {
+  /* Remove padding from main signup section row */
+  #signup .login-section.row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #signup .login-section > .col-12 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .signup-container {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .signup-header {
+    margin-bottom: 32px;
+  }
+
+  .signup-header h1 {
+    font-size: 28px;
+  }
+
+  .signup-header p {
+    font-size: 13px;
+  }
+
+  .signup-form .form-control,
+  .signup-form .form-select,
+  .signup-form input[type="date"] {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+
+  .signup-form .g-3 > * {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Remove margin from row g-3 */
+  .signup-form .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* Add margin-bottom to col-md-6 elements */
+  .signup-form .col-md-6 {
+    margin-bottom: 16px;
+  }
+
+  .signup-form .col-md-6:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Add spacing between form-fields and agreements */
+  .signup-form .form-fields {
+    margin-bottom: 24px;
+  }
+
+  .signup-form .form-label {
+    font-size: 13px;
+    margin-bottom: 6px;
+  }
+
+  .signup-form .form-check-label {
+    font-size: 13px;
+  }
+
+  .agreements {
+    margin-bottom: 24px;
+    gap: 10px;
+  }
+
+  .signup-form .btn-primary {
+    padding: 12px 16px;
+    font-size: 14px;
+    height: 44px;
+  }
+
+  .login-link {
+    font-size: 13px;
+    margin-top: 16px;
+  }
+
+  .illustration-container {
+    padding: 24px;
+    height: auto;
+    min-height: 400px;
+  }
+
+  .illustration-container .logo {
+    width: 150px;
+  }
+
+  .illustration-group {
+    transform: scale(0.6);
+  }
+}
+
+@media (max-width: 480px) {
+  .page-container {
+    padding: 20px 12px;
+  }
+
+  /* Reduce container padding even more on small mobile */
+  #signup .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  /* Ensure row has no margins */
+  #signup .login-section.row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #signup .login-section > .col-12 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .signup-header {
+    margin-bottom: 24px;
+  }
+
+  .signup-header h1 {
+    font-size: 24px;
+  }
+
+  .signup-header p {
+    font-size: 12px;
+  }
+
+  .signup-form .form-control,
+  .signup-form .form-select,
+  .signup-form input[type="date"] {
+    padding: 8px 12px;
+    font-size: 13px;
+    height: 38px;
+  }
+
+  .signup-form .form-label {
+    font-size: 12px;
+  }
+
+  .signup-form .form-check-input {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+  }
+
+  .signup-form .form-check-label {
+    font-size: 12px;
+  }
+
+  .agreements {
+    margin-bottom: 20px;
+  }
+
+  .signup-form .btn-primary {
+    padding: 10px 16px;
+    font-size: 13px;
+    height: 42px;
+  }
+
+  .login-link {
+    font-size: 12px;
+    margin-top: 12px;
+  }
+
+  .form-fields {
+    gap: 14px;
+  }
 }

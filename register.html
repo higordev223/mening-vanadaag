@@ -98,8 +98,8 @@
     <main id="signup" class="page-container">
       <div class="container">
         <div id="login">
-          <div class="login-section">
-            <section class="signup-container">
+          <div class="login-section row">
+            <section class="signup-container col-12 col-md-6">
               <header class="signup-header">
                 <h1>Welcome</h1>
                 <p>Fill out the form to get started</p>
@@ -107,17 +107,27 @@
 
               <form class="signup-form">
                 <div class="form-fields">
-                  <div class="form-group">
-                    <label for="email">E-mail</label>
+                  <div>
+                    <label for="email" class="form-label">E-mail</label>
                     <div class="input-wrapper">
-                      <input type="email" id="email" name="email" />
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        name="email"
+                      />
                     </div>
                   </div>
 
-                  <div class="form-group">
-                    <label for="password">Password</label>
+                  <div>
+                    <label for="password" class="form-label">Password</label>
                     <div class="input-wrapper">
-                      <input type="password" id="password" name="password" />
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="password"
+                        name="password"
+                      />
                       <img
                         src="images/189_1367.svg"
                         alt="Toggle password visibility"
@@ -126,92 +136,113 @@
                     </div>
                   </div>
 
-                  <div class="form-row">
-                    <div class="form-group">
-                      <label for="first-name">First Name</label>
-                      <div class="input-wrapper">
-                        <input type="text" id="first-name" name="first-name" />
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <div>
+                        <label for="first-name" class="form-label"
+                          >First Name</label
+                        >
+                        <div class="input-wrapper">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="first-name"
+                            name="first-name"
+                          />
+                        </div>
                       </div>
                     </div>
-                    <div class="form-group">
-                      <label for="last-name">Last Name</label>
-                      <div class="input-wrapper">
-                        <input type="text" id="last-name" name="last-name" />
+                    <div class="col-md-6">
+                      <div>
+                        <label for="last-name" class="form-label"
+                          >Last Name</label
+                        >
+                        <div class="input-wrapper">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="last-name"
+                            name="last-name"
+                          />
+                        </div>
                       </div>
                     </div>
                   </div>
 
-                  <div class="form-row">
-                    <div class="form-group">
-                      <label for="gender">Gender</label>
-                      <div class="input-wrapper select-wrapper">
-                        <span class="select-placeholder">Select gender</span>
-                        <img
-                          src="images/116_649.svg"
-                          alt="Dropdown arrow"
-                          class="input-icon"
-                        />
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <div>
+                        <label for="gender" class="form-label">Gender</label>
+                        <select class="form-select" id="gender" name="gender">
+                          <option value="" selected>Select gender</option>
+                          <option value="male">Male</option>
+                          <option value="female">Female</option>
+                          <option value="other">Other</option>
+                          <option value="prefer-not-to-say">
+                            Prefer not to say
+                          </option>
+                        </select>
                       </div>
                     </div>
-                    <div class="form-group">
-                      <label for="birth-date">Birth Date</label>
-                      <div class="input-wrapper">
+                    <div class="col-md-6">
+                      <div>
+                        <label for="birth-date" class="form-label"
+                          >Birth Date</label
+                        >
                         <input
-                          type="text"
+                          type="date"
+                          class="form-control"
                           id="birth-date"
                           name="birth-date"
-                          placeholder="dd/mm/aaaa"
-                        />
-                        <img
-                          src="images/116_657.svg"
-                          alt="Calendar icon"
-                          class="input-icon"
                         />
                       </div>
                     </div>
                   </div>
 
-                  <div class="form-row">
-                    <div class="form-group">
-                      <label for="region">Region</label>
-                      <div class="input-wrapper select-wrapper">
-                        <span class="select-placeholder"
-                          >Select your Country</span
-                        >
-                        <img
-                          src="images/116_666.svg"
-                          alt="Dropdown arrow"
-                          class="input-icon"
-                        />
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <div>
+                        <label for="region" class="form-label">Region</label>
+                        <select class="form-select" id="region" name="region">
+                          <option value="" selected>Select your Country</option>
+                          <option value="netherlands">Netherlands</option>
+                          <option value="belgium">Belgium</option>
+                          <option value="germany">Germany</option>
+                          <option value="france">France</option>
+                          <option value="united-kingdom">United Kingdom</option>
+                          <option value="spain">Spain</option>
+                          <option value="italy">Italy</option>
+                          <option value="other">Other</option>
+                        </select>
                       </div>
                     </div>
-                    <div class="form-group">
-                      <label for="postal-code">Postal Code</label>
-                      <div class="input-wrapper">
-                        <input
-                          type="text"
-                          id="postal-code"
-                          name="postal-code"
-                        />
+                    <div class="col-md-6">
+                      <div>
+                        <label for="postal-code" class="form-label"
+                          >Postal Code</label
+                        >
+                        <div class="input-wrapper">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="postal-code"
+                            name="postal-code"
+                          />
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
 
                 <div class="agreements">
-                  <div class="checkbox-group">
+                  <div class="form-check">
                     <input
                       type="checkbox"
+                      class="form-check-input"
                       id="terms"
                       name="terms"
-                      class="hidden-checkbox"
                     />
-                    <label for="terms" class="checkbox-label">
-                      <img
-                        src="images/116_676.svg"
-                        alt="Checkbox"
-                        class="checkbox-icon"
-                      />
+                    <label class="form-check-label checkbox-label" for="terms">
                       <span
                         >I accept the
                         <a href="#" class="form-link"
@@ -220,19 +251,17 @@
                       >
                     </label>
                   </div>
-                  <div class="checkbox-group">
+                  <div class="form-check">
                     <input
                       type="checkbox"
+                      class="form-check-input"
                       id="privacy"
                       name="privacy"
-                      class="hidden-checkbox"
                     />
-                    <label for="privacy" class="checkbox-label">
-                      <img
-                        src="images/116_680.svg"
-                        alt="Checkbox"
-                        class="checkbox-icon"
-                      />
+                    <label
+                      class="form-check-label checkbox-label"
+                      for="privacy"
+                    >
                       <span
                         >I accept the
                         <a href="#" class="form-link">privacy policy</a></span
@@ -241,14 +270,18 @@
                   </div>
                 </div>
 
-                <button type="submit" class="submit-btn">Sign Up</button>
+                <button type="submit" class="btn btn-primary w-100 submit-btn">
+                  Sign Up
+                </button>
               </form>
 
               <p class="login-link">
                 Already have an account? <a href="#" class="form-link">Login</a>
               </p>
             </section>
-            <div class="illustration-container">
+            <div
+              class="illustration-container col-12 col-md-6 d-none d-md-flex"
+            >
               <img
                 src="images/c243b1af7bd85b1e0d683f9def6e1122e2ef0f98.png"
                 alt="Mening Vandaag Logo"

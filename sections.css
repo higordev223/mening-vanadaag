@@ -8,6 +8,17 @@
   margin-top: 101px;
 }
 
+.two-column-left-container .form-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 42px;
+}
+
+@media (max-width: 480px) {
+  .two-column-left-container .form-image img {
+    width: 100%;
+  }
+}
 /* CSS for section section:hero */
 .hero-section {
   position: relative;
@@ -1839,10 +1850,6 @@ body.menu-open {
   margin: 0 auto;
 }
 
-.activation-code-section .form-image img {
-  width: 100%;
-}
-
 /* Mobile responsive font size for activation code sent h1 */
 @media (max-width: 768px) {
   .activation-code-section .form-header h1 {
@@ -1853,6 +1860,10 @@ body.menu-open {
 
 .mb-32 {
   margin-bottom: 32px !important;
+}
+
+.mb-20 {
+  margin-bottom: 20px !important;
 }
 
 /* Activation form button hover styles */
@@ -1871,11 +1882,6 @@ body.menu-open {
 }
 
 /* CSS for section section:activation-success */
-.activation-success .form-image {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 42px;
-}
 .activation-success .form-header p {
   max-width: 300px;
   margin: 0 auto;
@@ -1884,4 +1890,15 @@ body.menu-open {
 /* CSS for section section:forgot-password */
 .forgot-password .form-footer {
   justify-content: center;
+}
+
+@media (max-width: 480px) {
+  .forgot-password-sent-section .form-image img {
+    max-width: 310px;
+  }
+}
+
+/* CSS for section section:forgot-password-reset */
+.forgot-password-reset .form-label {
+  font-size: 14px;
 }

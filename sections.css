@@ -1880,3 +1880,8 @@ body.menu-open {
   max-width: 300px;
   margin: 0 auto;
 }
+
+/* CSS for section section:forgot-password */
+.forgot-password .form-footer {
+  justify-content: center;
+}

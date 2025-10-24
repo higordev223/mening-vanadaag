@@ -1904,8 +1904,14 @@ body.menu-open {
 }
 
 /* CSS for section section:survey */
+.survey-section {
+  overflow-x: hidden;
+  max-width: 100%;
+}
 .survey-section .container {
   width: 1200px;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 .user-profile-header {
   display: flex;
@@ -1977,8 +1983,10 @@ body.menu-open {
 .dashboard-surveys {
   flex: 1;
   min-width: 0;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .dashboard-profile {
@@ -2083,10 +2091,14 @@ body.menu-open {
 #survey .tab-content {
   min-height: 400px;
   padding: 20px;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 #survey .tab-pane {
   animation: fadeIn 0.3s ease-in-out;
+  max-width: 100%;
+  overflow: visible;
 }
 
 @keyframes fadeIn {
@@ -2168,7 +2180,7 @@ body.menu-open {
   gap: 16px;
   max-height: 400px; /* Show approximately 4 items (78px + 16px gap) */
   overflow-y: auto;
-  padding-right: 4px;
+  padding-right: 20px;
 }
 
 .survey-list::-webkit-scrollbar {
@@ -2376,9 +2388,15 @@ form {
 }
 
 .btn-outline {
-  border: 1px solid var(--color-primary-red);
-  color: var(--color-primary-red);
+  border: 1px solid var(--color-white);
+  color: var(--color-white);
   background-color: transparent;
+}
+
+.btn-outline:hover {
+  border: 1px solid var(--color-primary-red);
+  color: var(--color-white);
+  background-color: var(--color-primary-red);
 }
 
 .btn-primary {
@@ -2774,5 +2792,109 @@ form {
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
+  }
+}
+
+/* Exchanges content wrapper */
+.exchanges-content {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: visible;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: #d4d4d8 #f4f4f5;
+}
+
+/* Custom scrollbar for webkit browsers */
+.exchanges-content::-webkit-scrollbar {
+  height: 8px;
+}
+
+.exchanges-content::-webkit-scrollbar-track {
+  background: #f4f4f5;
+  border-radius: 4px;
+}
+
+.exchanges-content::-webkit-scrollbar-thumb {
+  background-color: #d4d4d8;
+  border-radius: 4px;
+}
+
+.exchanges-content::-webkit-scrollbar-thumb:hover {
+  background-color: #a1a1aa;
+}
+
+/* Rewards Table Styles */
+.rewards-table {
+  background-color: #ffffff;
+  border-radius: 6px;
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  min-width: 600px;
+  border: 1px solid #f4f4f5;
+  margin-bottom: 0;
+}
+
+.rewards-table thead th {
+  color: #71717a;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  border: none;
+  border-bottom: 1px solid #f4f4f5;
+  padding: 16px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.rewards-table tbody td {
+  color: #27272a;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  border: none;
+  padding: 16px;
+  border-bottom: 1px solid #f4f4f5;
+  background-color: #ffffff;
+  white-space: nowrap;
+}
+
+.rewards-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.rewards-table tbody tr {
+  border: none;
+}
+
+.table-responsive {
+  border-radius: 6px;
+  overflow: visible;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+/* Mobile specific overflow handling */
+@media (max-width: 768px) {
+  .dashboard-container {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .dashboard-surveys {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  #survey .tab-content {
+    padding: 10px 0;
+    overflow: hidden;
+  }
+
+  #survey .tab-pane {
+    max-width: 100%;
+    overflow: visible;
   }
 }

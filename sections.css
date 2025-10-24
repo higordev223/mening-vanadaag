@@ -1938,6 +1938,7 @@ body.menu-open {
   font-size: 36px;
   line-height: 1.2;
   color: var(--color-black);
+  margin-bottom: 0;
 }
 
 .user-greeting .account-label {

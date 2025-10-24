@@ -2916,3 +2916,202 @@ form {
   text-align: center;
   margin-top: 32px;
 }
+
+/* Unsubscribe */
+.unsubscribe-container {
+  max-width: 872px;
+  padding: 20px;
+}
+
+.unsubscribe-container .content-wrapper {
+  margin-top: 52px;
+}
+
+.unsubscribe-container .illustration-wrapper {
+  max-width: 441px;
+  margin: 0 auto;
+}
+
+.unsubscribe-container .illustration-wrapper img {
+  width: 100%;
+}
+
+.unsubscribe-container .text-content {
+  padding: 0 35px;
+  text-align: center;
+}
+
+.unsubscribe-container .text-content h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--color-black);
+}
+
+.unsubscribe-container .text-content p {
+  margin-bottom: 32px;
+  font-size: 14px;
+  color: #52525b;
+}
+
+.unsubscribe-buttons .btn-delete {
+  background-color: var(--color-text-muted);
+  color: var(--color-black);
+}
+
+.unsubscribe-buttons .btn-stay {
+  background-color: #058c7f;
+  color: var(--color-white);
+}
+
+/* Unsubscribe Password Form */
+.unsubscribe-password-form {
+  width: 100%;
+  max-width: 581px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.unsubscribe-password-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 0 !important;
+}
+
+.unsubscribe-password-form .form-label {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #002134;
+  margin-bottom: 0;
+}
+
+.unsubscribe-password-form .form-control {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-family: var(--font-primary);
+  font-size: 14px;
+  line-height: 1;
+  color: #64748b;
+  height: auto;
+}
+
+.unsubscribe-password-form .form-control:focus {
+  border-color: #cbd5e1;
+  box-shadow: none;
+  outline: none;
+}
+
+.unsubscribe-password-form .unsubscribe-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  width: 100%;
+  align-items: center;
+}
+
+.unsubscribe-buttons {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  align-items: center;
+}
+
+.btn-delete,
+.btn-stay,
+.btn-cancel,
+.btn-unsubscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 581px;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 400px;
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.unsubscribe-password-form .btn-cancel,
+.unsubscribe-password-form .btn-unsubscribe {
+  flex: 1;
+  max-width: none;
+}
+
+.btn-delete,
+.btn-unsubscribe {
+  background-color: #cb4c1d;
+}
+
+.btn-delete:hover,
+.btn-delete:focus,
+.btn-delete:active,
+.btn-unsubscribe:hover,
+.btn-unsubscribe:focus,
+.btn-unsubscribe:active {
+  background-color: #cb4c1d;
+  opacity: 0.9;
+}
+
+.btn-stay,
+.btn-cancel {
+  background-color: #002134;
+}
+
+.btn-stay:hover,
+.btn-stay:focus,
+.btn-stay:active,
+.btn-cancel:hover,
+.btn-cancel:focus,
+.btn-cancel:active {
+  background-color: #002134;
+  opacity: 0.9;
+}
+
+@media (max-width: 1024px) {
+  .unsubscribe-buttons {
+    flex-direction: column;
+    max-width: 428px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .unsubscribe-password-form .unsubscribe-buttons {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .unsubscribe-password-form .btn-cancel,
+  .unsubscribe-password-form .btn-unsubscribe {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-delete,
+  .btn-stay,
+  .btn-cancel,
+  .btn-unsubscribe {
+    max-width: 100%;
+  }
+
+  .unsubscribe-password-form {
+    max-width: 100%;
+  }
+  .unsubscribe-container .text-content h1 {
+    font-size: 28px;
+  }
+}

@@ -3050,33 +3050,28 @@ form {
   max-width: none;
 }
 
-.btn-delete,
 .btn-unsubscribe {
-  background-color: #cb4c1d;
+  background-color: var(--color-primary-red);
 }
 
-.btn-delete:hover,
-.btn-delete:focus,
-.btn-delete:active,
 .btn-unsubscribe:hover,
 .btn-unsubscribe:focus,
 .btn-unsubscribe:active {
-  background-color: #cb4c1d;
-  opacity: 0.9;
+  background-color: var(--color-primary-red);
+  opacity: 0.7;
 }
 
 .btn-stay,
 .btn-cancel {
-  background-color: #002134;
+  background-color: var(--color-text-muted);
+  color: var(--color-black);
 }
 
-.btn-stay:hover,
-.btn-stay:focus,
-.btn-stay:active,
 .btn-cancel:hover,
 .btn-cancel:focus,
 .btn-cancel:active {
-  background-color: #002134;
+  background-color: var(--color-text-grey);
+  color: var(--color-white);
   opacity: 0.9;
 }
 

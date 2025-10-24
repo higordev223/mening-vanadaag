@@ -2921,6 +2921,7 @@ form {
   padding: 20px;
 }
 
+.survey-container .content-wrapper,
 .unsubscribe-container .content-wrapper {
   margin-top: 52px;
 }
@@ -2934,17 +2935,20 @@ form {
   width: 100%;
 }
 
-.unsubscribe-container .text-content {
+.unsubscribe-container .text-content,
+.survey-container .text-content {
   padding: 0 35px;
   text-align: center;
 }
 
+.survey-container .text-content h1,
 .unsubscribe-container .text-content h1 {
   font-size: 32px;
   font-weight: bold;
   color: var(--color-black);
 }
 
+.survey-container .text-content p,
 .unsubscribe-container .text-content p {
   margin-bottom: 32px;
   font-size: 14px;
@@ -3104,6 +3108,8 @@ form {
   .unsubscribe-password-form {
     max-width: 100%;
   }
+
+  .survey-container .text-content h1,
   .unsubscribe-container .text-content h1 {
     font-size: 28px;
   }
@@ -3655,4 +3661,19 @@ form {
   .content-header h1 {
     font-size: 32px;
   }
+}
+/* Survey Complete */
+.survey-container .illustration-wrapper {
+  max-width: 538px;
+  margin: 0 auto;
+}
+.survey-container .illustration-wrapper img {
+  width: 100%;
+}
+.survey-container .content-wrapper {
+  text-align: center;
+}
+.survey-container .continue-button {
+  max-width: 438px;
+  margin: 0 auto;
 }

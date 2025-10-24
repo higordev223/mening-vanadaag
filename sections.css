@@ -2898,3 +2898,21 @@ form {
     overflow: visible;
   }
 }
+
+/* Survey not available Tab */
+.survey-not-available {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 442px;
+}
+.survey-empty-state {
+  max-width: 354px;
+}
+.survey-empty-state img {
+  width: 100%;
+}
+.survey-empty-state p {
+  text-align: center;
+  margin-top: 32px;
+}

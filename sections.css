@@ -2500,10 +2500,6 @@ form {
 
 /* Mobile responsive styles for survey section */
 @media (max-width: 768px) {
-  .survey-section .container {
-    padding: 0 20px;
-  }
-
   #survey .row.mb-5 {
     margin-bottom: 2rem !important;
   }
@@ -2658,10 +2654,6 @@ form {
 }
 
 @media (max-width: 480px) {
-  .survey-section .container {
-    padding: 0 16px;
-  }
-
   /* User greeting */
   .user-greeting h1 {
     font-size: 24px;

@@ -2482,11 +2482,6 @@ form {
   .personal-information-card {
     width: 100%;
   }
-
-  .survey-section .container {
-    width: 100%;
-    max-width: 1200px;
-  }
 }
 
 /* Medium screens - tablets */
@@ -2826,6 +2821,7 @@ form {
 }
 
 /* Rewards Table Styles */
+.exchanges-table,
 .rewards-table {
   background-color: #ffffff;
   border-radius: 6px;
@@ -2837,6 +2833,7 @@ form {
   margin-bottom: 0;
 }
 
+.exchanges-table thead th,
 .rewards-table thead th {
   color: #71717a;
   font-family: "Inter", sans-serif;
@@ -2849,6 +2846,7 @@ form {
   white-space: nowrap;
 }
 
+.exchanges-table tbody td,
 .rewards-table tbody td {
   color: #27272a;
   font-family: "Inter", sans-serif;
@@ -2861,11 +2859,11 @@ form {
   white-space: nowrap;
 }
 
-.rewards-table tbody tr:last-child td {
+.exchanges-table tbody tr:last-child td {
   border-bottom: none;
 }
 
-.rewards-table tbody tr {
+.exchanges-table tbody tr {
   border: none;
 }
 
@@ -3108,5 +3106,267 @@ form {
   }
   .unsubscribe-container .text-content h1 {
     font-size: 28px;
+  }
+}
+
+/* Rewards Page */
+.exchange-button {
+  border: 1px solid var(--color-primary-red);
+  color: var(--color-primary-red);
+  width: 144px;
+}
+
+.exchange-button:hover {
+  background-color: var(--color-primary-red);
+  color: var(--color-white);
+}
+
+.rewards-table > tbody > tr:hover > * {
+  background-color: transparent;
+}
+
+/* Exchange Modal */
+.exchange-modal {
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.exchange-modal .modal-header {
+  border-bottom: none;
+  padding: 24px 24px 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.exchange-modal .modal-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #374151;
+  gap: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.exchange-modal .modal-title svg {
+  flex-shrink: 0;
+}
+
+.exchange-modal .btn-close {
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  opacity: 1;
+  width: 20px;
+  height: 20px;
+  background-size: 12px;
+  color: #395164;
+}
+
+.exchange-modal .btn-close:hover {
+  opacity: 0.7;
+}
+
+.exchange-modal .modal-body {
+  padding: 0 24px 32px 24px;
+  color: #3f3f46;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.exchange-modal .modal-body p {
+  margin: 0;
+}
+
+.exchange-modal .modal-footer {
+  border-top: 1px solid #dfe3e8;
+  padding: 16px 24px 16px 24px;
+  gap: 12px;
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: row;
+}
+
+.exchange-modal .modal-footer button {
+  margin: 0;
+}
+
+.exchange-modal .btn-cancel {
+  background-color: var(--color-background);
+  border: 1px solid #e5e7eb;
+  color: #6b7280;
+  padding: 10px 24px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  width: auto;
+}
+
+.exchange-modal .btn-cancel:hover {
+  background-color: #f9fafb;
+  border-color: #d1d5db;
+  color: #374151;
+}
+
+.exchange-modal .btn-confirm {
+  background-color: var(--color-primary-red);
+  border: 1px solid var(--color-primary-red);
+  color: var(--color-white);
+  padding: 6.5px 32.5px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.exchange-modal .btn-confirm:hover {
+  background-color: var(--color-white);
+  color: var(--color-primary-red);
+  border: 1px solid var(--color-primary-red);
+}
+
+.modal-dialog-centered {
+  max-width: 440px;
+}
+
+/* Modal backdrop styling */
+.modal-backdrop.show {
+  opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+  .rewards-table {
+    min-width: auto;
+  }
+  .rewards-table-wrapper {
+    border: none;
+  }
+
+  .rewards-table thead {
+    display: none;
+  }
+
+  .rewards-table,
+  .rewards-table tbody,
+  .rewards-table tbody tr,
+  .rewards-table tbody td {
+    display: block;
+    width: 100%;
+  }
+
+  .rewards-table tbody tr {
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    margin-bottom: 12px;
+    padding: 8px 0;
+    background-color: var(--color-background-primary) !important;
+  }
+
+  .rewards-table tbody tr:last-child {
+    margin-bottom: 0;
+  }
+
+  .rewards-table tbody td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    border-bottom: 1px dashed #e2e8f0;
+    text-align: right;
+  }
+
+  .rewards-table tbody td:last-child {
+    border-bottom: none;
+    justify-content: center;
+    padding-top: 16px;
+  }
+
+  .rewards-table tbody td::before {
+    content: attr(data-label);
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    margin-right: 16px;
+    text-align: left;
+    flex: 1;
+  }
+
+  .rewards-table tbody td:last-child::before {
+    display: none;
+  }
+
+  .rewards-table tbody td.text-end {
+    text-align: center !important;
+  }
+
+  .exchange-button {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .back-to-surveys-wrapper {
+    margin-top: 32px;
+    padding: 0 16px;
+  }
+
+  .back-to-surveys-button {
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+
+  .back-arrow-icon {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .exchange-modal {
+    border-radius: 8px;
+  }
+
+  .exchange-modal .modal-header {
+    padding: 20px 20px 12px 20px;
+  }
+
+  .exchange-modal .modal-title {
+    font-size: 16px;
+  }
+
+  .exchange-modal .modal-body {
+    padding: 0 20px 20px 20px;
+    font-size: 13px;
+  }
+
+  .exchange-modal .modal-footer {
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .exchange-modal .btn-cancel,
+  .exchange-modal .btn-confirm {
+    padding: 10px 20px;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .modal-dialog-centered {
+    max-width: calc(100% - 32px);
+    margin: 16px;
+  }
+
+  .back-to-surveys-wrapper {
+    margin-top: 24px;
+  }
+
+  .back-to-surveys-button {
+    font-size: 13px;
+    padding: 10px 16px;
+  }
+
+  .back-arrow-icon {
+    width: 16px;
+    height: 16px;
   }
 }

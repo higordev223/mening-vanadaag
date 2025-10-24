@@ -17,6 +17,7 @@
 @media (max-width: 480px) {
   .two-column-left-container .form-image img {
     width: 100%;
+    max-width: 120px;
   }
 }
 /* CSS for section section:hero */
@@ -3100,6 +3101,10 @@ form {
 
   .unsubscribe-password-form {
     max-width: 100%;
+  }
+  .unsubscribe-container,
+  .unsubscribe-container .text-content {
+    padding: 0;
   }
 
   .survey-container .text-content h1,
